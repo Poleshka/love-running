@@ -200,6 +200,14 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+
+@media screen and (min-width:576px){
+    #photos{
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media  screen and (min-width: 768px) {
      /*Header */
@@ -256,6 +264,9 @@ main {
         text-align: end;
         align-self: flex-end;
      }
+     #photos{
+        column-count: 3;
+     }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -268,6 +279,10 @@ main {
         display: flex;
         justify-content: space-between;
     }
+
+    #photos{
+        column-count: 4;
+     }
 }
 
 @media screen and (min-width: 1200px) {
